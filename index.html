@@ -12,9 +12,15 @@
   </head>
   <body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="script.js"></script>
     <div class="container">
       <span class="text color-text-flow"> The Orange Wine Cult</span>
     </div>
+
+    <script>
+      $('.text').html(function(i, html) {
+        var chars = $.trim(html).split("");
+        return '<span>' + chars.join('</span><span>') + '</span>';
+      });
+    </script>
   </body>
 </html>
