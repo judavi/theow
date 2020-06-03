@@ -652,13 +652,13 @@
 body {
   background-color: #1a1a1a;
   color: #fefefe;
-  font-family: 'Garamond';
+  font-family: 'EB Garamond', serif;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   font-size: 1.3em;
   line-height: 2;
-  font-weight: 300;
-  text-rendering: optimizeLegibility;
+  font-weight: 350;
+  text-rendering: geometricPrecision;
   text-align: center;
 }
 
