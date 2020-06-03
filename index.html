@@ -21,9 +21,23 @@
     <!-- Follow the rabbit hole https://theow.co/index2.html   -->
 
     <script>
+      var counter = 0;
       $('.text').html(function(i, html) {
         var chars = $.trim(html).split("");
         return '<span>' + chars.join('</span><span>') + '</span>';
+      });
+      $( ".container" ).click(function() {
+        if (counter == 0){
+          alert('are you knocking the door?');
+        }
+        if (counter == 3){
+          alert('send nudes');
+        }
+        if (counter > 4 ){
+          alert("Well we're just kidding... there is more hidden here ");
+        }
+
+        counter = counter + 1;
       });
     </script>
   </body>
